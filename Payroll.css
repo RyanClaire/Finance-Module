@@ -1,0 +1,92 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #007BFF;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#search {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.notification {
+    font-size: 24px;
+}
+
+/* Section Titles */
+h2 {
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Salary Processing Section */
+.salary-processing table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.salary-processing th, .salary-processing td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.salary-processing th {
+    background-color: #f4f4f4;
+}
+
+.process-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.process-btn:hover {
+    background-color: #218838;
+}
+
+/* Tax Withholdings Section */
+.tax-withholdings table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.tax-withholdings th, .tax-withholdings td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.tax-withholdings th {
+    background-color:

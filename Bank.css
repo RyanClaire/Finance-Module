@@ -1,0 +1,180 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #007BFF;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#search {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.notification {
+    font-size: 24px;
+}
+
+/* Section Titles */
+h2 {
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Connected Accounts Overview */
+.connected-accounts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.account-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.account-info {
+    margin-bottom: 20px;
+}
+
+.status {
+    font-size: 14px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.status.active {
+    color: green;
+}
+
+.status.pending {
+    color: orange;
+}
+
+.status.error {
+    color: red;
+}
+
+.account-actions button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.account-actions button:hover {
+    background-color: #0056b3;
+}
+
+/* Recent Transactions */
+.recent-transactions table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.recent-transactions th, .recent-transactions td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.recent-transactions th {
+    background-color: #f4f4f4;
+}
+
+.reconciled {
+    color: green;
+}
+
+.pending {
+    color: orange;
+}
+
+.discrepancy {
+    color: red;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Reconciliation Status */
+.reconciliation-status {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions button {
+    margin: 10px;
+}
+
+.actions .view-discrepancies-btn {
+    background-color: #28a745;
+}
+
+.actions .manual-reconcile-btn {
+    background-color: #ffc107;
+}
+
+.actions .reconcile-all-btn {
+    background-color: #dc3545;
+}
+
+.actions button:hover {
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .connected-accounts {
+        flex-direction: column;
+    }
+
+    .account-card {
+        width: 100%;
+    }
+}
